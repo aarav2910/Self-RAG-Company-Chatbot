@@ -1,0 +1,230 @@
+[
+  {
+    "id": "q01",
+    "query": "What is the normal work week at Valve, and is the lunch hour paid?",
+    "ideal_context": [
+      "The normal work week for Valve shall consist of five (5), seven (7) hour days. Ordinarily, work hours are from 9:00 a.m. - 5:00 p.m., Monday through Friday, including one hour (unpaid) for lunch."
+    ]
+  },
+  {
+    "id": "q02",
+    "query": "How early must an employee notify their supervisor if they will be absent or late?",
+    "ideal_context": [
+      "If you are absent for any reason or plan to arrive late or leave early, you must notify your supervisor and the office manager as far in advance as possible and no later than one hour before the start of your scheduled work day. In the event of an emergency, you must notify your supervisor as soon as possible."
+    ]
+  },
+  {
+    "id": "q03",
+    "query": "What happens if an employee is absent for three consecutive days without telling anyone?",
+    "ideal_context": [
+      "Except as provided in other policies, an employee who is absent from work for three consecutive days without notification to his or her supervisor or the Executive Director will be considered to have voluntarily terminated his or her employment. The employee’s final paycheck will be mailed to the last mailing address on file with Valve."
+    ]
+  },
+  {
+    "id": "q04",
+    "query": "Who is eligible for overtime pay, what is the rate, and who can authorize it?",
+    "ideal_context": [
+      "Overtime pay, which is applicable only to Non-Exempt Employees, is for any time worked in excess of 40 hours in a work week. Only the Executive Director or his or her designee, upon the request of an employee’s supervisor, may authorize overtime. Overtime rate is one and one-half time (1½) the employee’s straight time rate, except in instances involving a Sunday or holidays when the rate is two times the regular rate. Payment of overtime will be provided in the pay period following the period in which it is earned."
+    ]
+  },
+  {
+    "id": "q05",
+    "query": "Is employment at Valve guaranteed for a fixed period, and who can change the at-will policy?",
+    "ideal_context": [
+      "Unless an employee has a written employment agreement with Valve, which provides differently, all employment at Valve is “at-will.” That means that employees may be terminated from employment with Valve with or without cause, and employees are free to leave the employment of Valve with or without cause. Any representation by any Valve officer or employee contrary to this policy is not binding upon Valve unless it is in writing and is signed by the Executive Director with the approval of the Board of Directors."
+    ]
+  },
+  {
+    "id": "q06",
+    "query": "How does Valve define a full-time employee versus a part-time employee?",
+    "ideal_context": [
+      "Full-Time Employee. A Full Time Employee regularly works at least 35 hours per week",
+      "Part-Time Employee. A Part Time Employee regularly works less than 35 hours per week but no less than 17 ½ hours per week."
+    ]
+  },
+  {
+    "id": "q07",
+    "query": "What is the difference between an exempt and a non-exempt employee?",
+    "ideal_context": [
+      "Exempt Employee. An Exempt Employee is an employee who is paid on a salary basis and meets the qualifications for exemption from the overtime requirements of the Fair Labor Standards Act (“FLSA”).",
+      "Non-Exempt Employee. A Non-Exempt Employee is an employee who is paid an hourly rate and does not meet the qualifications for exemption from the overtime requirements of the Fair Labor Standards Act (“FLSA”). For Non-Exempt Employees, an accurate record of hours worked must be maintained."
+    ]
+  },
+  {
+    "id": "q08",
+    "query": "Are temporary employees eligible for holidays, vacation, and sick leave?",
+    "ideal_context": [
+      "Temporary Employee. An individual employed, either on a full-time or part-time basis, for a specific period of time less than six months. Temporary employees are entitled only to those benefits required by statute or as otherwise stated in the Valve Employee Handbook.",
+      "Temporary employees are ineligible for holiday leave benefits.",
+      "Temporary employees are ineligible for Vacation benefits.",
+      "Temporary employees are not eligible for paid sick leave benefits."
+    ]
+  },
+  {
+    "id": "q09",
+    "query": "When are paychecks distributed, and what if the pay date falls on a weekend or holiday?",
+    "ideal_context": [
+      "Paychecks are distributed on the 15th and the last day of each month, except when either of those days falls on a Saturday, Sunday or holiday, in which case paychecks will be distributed on the preceding workday. Timesheets are due to the Executive Director within two days of each pay period."
+    ]
+  },
+  {
+    "id": "q10",
+    "query": "Who pays for employee health insurance premiums and when does coverage begin?",
+    "ideal_context": [
+      "Valve currently provides individual health and dental insurance benefits for eligible full-time and part-time employees except those who are insured through their spouse, retired military, or other plans, beginning after the first full month of employment. Eligible employees may elect to participate in available health plan(s) offered by Valve. Valve presently pays the individual insurance premium for all eligible employees. Valve may require employees to pay a portion of insurance premium in the future."
+    ]
+  },
+  {
+    "id": "q11",
+    "query": "Who is eligible for the retirement program and when does the employer contribute?",
+    "ideal_context": [
+      "Valve provides a retirement program for eligible full-time and part-time employees who are 21 years of age or older. Valve contributes to the employee’s retirement plan when employee becomes vested after one year of employment. Eligible employees may contribute to retirement plan at start of employment. Employer percentage contributions to the retirement program is reviewed and determined annually by the Valve Board of Directors."
+    ]
+  },
+  {
+    "id": "q12",
+    "query": "How many holidays do full-time employees get, and which one is only a half day?",
+    "ideal_context": [
+      "Full-Time Employees are eligible for 11.5 holidays per year as follows: New Year’s Day, Martin Luther King, Jr.’s Birthday, President’s Day, Memorial Day, Independence Day, Labor Day, Columbus Day, Veteran’s Day, Thanksgiving Day, The Day After Thanksgiving Day, Christmas Eve (1/2 Day), Christmas Day"
+    ]
+  },
+  {
+    "id": "q13",
+    "query": "How much paid vacation does a full-time employee earn in each year of employment?",
+    "ideal_context": [
+      "During the first 90 days of employment full- and part-time employees will not earn Vacation benefits. During the remaining nine months of first year employment, a full-time employee will earn two weeks (10 days) of paid Vacation.",
+      "Full-time employees will continue to earn two weeks (10 days) of Vacation during the second year of employment. In their third year of employment, full-time employees will earn three weeks (15 days) of Vacation. During the fourth year and thereafter, full-time employees will earn four weeks (20 days) of Vacation per year."
+    ]
+  },
+  {
+    "id": "q14",
+    "query": "Can unused vacation be carried over, and what happens when an employee hits the vacation ceiling?",
+    "ideal_context": [
+      "Employees are expected to use Vacation benefits in the fiscal year in which Vacation is earned. Employees may carry over unused Vacation from one year to the next only with the approval of the Executive Director. Employees may not accrue more than the maximum leave they are allowed. Once an employee reaches his or her annual ceiling, the employee ceases to accrue any additional Vacation benefits. If an employee later uses enough Vacation benefits to fall below the ceiling, the employee starts to accrue leave again from that date forward until he or she reaches his or her Vacation ceiling."
+    ]
+  },
+  {
+    "id": "q15",
+    "query": "How is sick leave earned, what is the maximum accumulation, and is unused sick leave paid out on separation?",
+    "ideal_context": [
+      "Sick leave benefits are earned on a prorated basis of one day (7 hours) per month for full-time employees beginning at first day of employment. Part-time employees receive prorated sick leave benefits, (i.e., 3.5 hours per month if the Employee works 17.5 hours per week).",
+      "Unused sick leave can accumulate from year to year up to a maximum of 30 days (210 hours) for full-time employees. This limitation on accrual of sick leave benefits is prorated accordingly for part-time employees. No sick leave benefits are paid upon separation of employment from Valve for any reason."
+    ]
+  },
+  {
+    "id": "q16",
+    "query": "When will Valve require a doctor's note for an illness-related absence?",
+    "ideal_context": [
+      "A physician’s statement may be required as proof of the need for any illness-related absence regardless of the length of the absence.",
+      "If an employee’s illness or injury requires a consecutive absence of five (5) days or more, physician documentation will be required."
+    ]
+  },
+  {
+    "id": "q17",
+    "query": "How many personal leave days do employees get and can they be carried over?",
+    "ideal_context": [
+      "Valve provides three (3) days of personal leave per calendar year to all Full-Time and Part-Time employees who have completed six months of employment. Personal leave benefits are prorated accordingly for part-time employees. Temporary employees are not eligible for paid personal leave benefits. Personal leave is accrued at the beginning of each year and cannot be carried into the next year. Personal leave may not be taken in the first six (6) months of employment. All personal leave is subject to prior approval by the supervisor and Executive Director and must be requested in hourly increments. No personal leave benefits are paid upon separation from employment with Valve for any reason."
+    ]
+  },
+  {
+    "id": "q18",
+    "query": "How does military leave affect an employee's health insurance and benefit eligibility?",
+    "ideal_context": [
+      "Employees who are inducted into or enlist in the Armed Forces of the United States or are called to duty as a member of a reserve unit may take an unpaid leave in accordance with applicable law.",
+      "The time an employee spends on military leave will be counted as continuous service for the purpose of determining eligibility and accrual for various benefit plans and policies.",
+      "For military leaves extending 30 days or less, Valve will continue to pay the portion of the premium on health insurance, if any, that it was paying before military leave began. In order to continue such health insurance, the employee must continue to pay his or her portion of premiums during this period. For military leaves extending beyond 30 days, the employee will have the option to continue his or her insurance coverage at the employee’s cost."
+    ]
+  },
+  {
+    "id": "q19",
+    "query": "How is jury duty compensated and what if it lasts more than ten days?",
+    "ideal_context": [
+      "Jury Duty. For time served on jury duty, Valve will pay employees the difference between his or her salary and any amount paid by the government, unless prohibited by law, up to a maximum of ten days. If an employee is required to serve more than ten days of jury duty, Valve will provide the employee with unpaid leave. Employees must provide Valve a copy of proof of service received by court in which they serve."
+    ]
+  },
+  {
+    "id": "q20",
+    "query": "How much parental leave can an employee take for school-related events, and is it paid?",
+    "ideal_context": [
+      "A parent is entitled to a total of 24 hours of unpaid leave during any 12-month period to attend or participate in school-related events for his or her child. Valve reserves the right, however, to deny such leave if such a leave would disrupt Valve’s operations. While parental leave is unpaid, employees may elect to use accrued vacation or personal leave.",
+      "If the need for parental leave is foreseeable, the employee must provide a written notice and request for parental leave at least 10 days prior to the event."
+    ]
+  },
+  {
+    "id": "q21",
+    "query": "How many days of paid bereavement leave are given for a parent versus a grandparent?",
+    "ideal_context": [
+      "Employees shall be entitled to bereavement leave with pay of five (5) days in the event of a death in the employee’s immediate family (spouse/life partner, child or parent) and three (3) days for grandparent, sister or brother, father-in-law, mother-in-law, or grandchildren."
+    ]
+  },
+  {
+    "id": "q22",
+    "query": "Who can apply for extended personal leave, how long can it last, and is reinstatement guaranteed?",
+    "ideal_context": [
+      "Employees who have been employed by Valve for at least one year may apply for personal leaves of absence for up to eight weeks. Personal leaves are unpaid and are discretionary with the management of Valve.",
+      "Valve cannot guarantee reinstatement upon return from a personal leave. Valve will, however, make a reasonable effort to place the employee in an available position for which he or she is qualified. If such a position is not available, then the employee’s employment will terminate."
+    ]
+  },
+  {
+    "id": "q23",
+    "query": "What is Valve's policy when the office is closed due to severe weather?",
+    "ideal_context": [
+      "Valve closes when federal government offices in the Washington metropolitan area are closed due to severe weather conditions. Valve also will follow a liberal leave policy when the federal government announces that liberal leave is applicable. Under Valve’s liberal leave policy, annual and/or personal leave may be taken without prior scheduling and approval if the employee is unable to reach the office due to severe weather conditions."
+    ]
+  },
+  {
+    "id": "q24",
+    "query": "How much notice should an employee give when resigning, and are they paid for unused vacation?",
+    "ideal_context": [
+      "Valve encourages employees to provide at least two weeks (10 days) written notice prior to intended separation. After receiving such notice, an exit interview will be scheduled by the Executive Director or his or her designee.",
+      "Resignation. Employees are encouraged to give at least 10 business days of written notice. Since a longer period is desired, the intention to resign should be made known as far in advance as possible. Employees who resign are entitled to receive accrued, unused Vacation benefits."
+    ]
+  },
+  {
+    "id": "q25",
+    "query": "What is the consequence of falsifying information on an employment application?",
+    "ideal_context": [
+      "Falsifying or withholding information on your employment application that did or would have affected Valve’s decision to hire you (this conduct will result in your immediate termination);"
+    ]
+  },
+  {
+    "id": "q26",
+    "query": "What must employees return upon separation, and can Valve withhold money if property is not returned?",
+    "ideal_context": [
+      "In the event of separation from employment, or immediately upon request by the Executive Director or his or her designee, Employees must return all Valve property that is in their possession or control. Where permitted by applicable law(s), Valve may withhold from the employee’s final paycheck the cost of any property, including intellectual property, which is not returned when required. Valve also may take any action deemed appropriate to recover or protect its property."
+    ]
+  },
+  {
+    "id": "q27",
+    "query": "Are employees allowed to hold outside jobs?",
+    "ideal_context": [
+      "Individuals employed by Valve may hold outside jobs as long as they meet the performance standards of their job with Valve.",
+      "If Valve determines that an employee’s outside work interferes with their job performance or their ability to meet the requirements of Valve, as they are modified from time to time, the employee may be asked to terminate the outside employment if he or she wishes to remain employed with Valve.",
+      "Outside employment that constitutes a conflict of interest is prohibited."
+    ]
+  },
+  {
+    "id": "q28",
+    "query": "What counts as confidential information and what happens if an employee discloses it?",
+    "ideal_context": [
+      "Any information that an employee learns about Valve, or its members or donors, as a result of working for Valve that is not otherwise publicly available constitutes confidential information. Employees may not disclose confidential information to anyone who is not employed by Valve or to other persons employed by Valve who do not need to know such information to assist in rendering services.",
+      "Such information includes, but is not limited to the following examples: Compensation data. Program and financial information, including information related to donors, and pending projects and proposals.",
+      "Any employee who discloses confidential Valve information will be subject to disciplinary action (including possible separation), even if he or she does not actually benefit from the disclosure of such information."
+    ]
+  },
+  {
+    "id": "q29",
+    "query": "Do employees have a right to privacy for emails and files on company computers?",
+    "ideal_context": [
+      "All data in Valve’s computer and communication systems (including documents, other electronic files, e-mail and recorded voice mail messages) are the property of Valve. Valve may inspect and monitor such data at any time. No individual should have any expectation of privacy for messages or other data recorded in Valve’s systems. This includes documents or messages marked “private,” which may be inaccessible to most users but remain available to Valve. Likewise, the deletion of a document or message may not prevent access to the item or completely eliminate the item from the system."
+    ]
+  },
+  {
+    "id": "q30",
+    "query": "How should an employee report harassment, and what if the complaint is against the Executive Director?",
+    "ideal_context": [
+      "Reporting of Harassment: If you believe that you have experienced or witnessed sexual harassment or other discriminatory harassment by any employee of Valve, you should report the incident immediately to your supervisor or to the Executive Director.",
+      "Employees are encouraged to raise any questions or concerns about this policy or about possible discriminatory harassment with the Executive Director. In the case where the allegation of harassment is against the Executive Director, please notify the staff member designated as grievance officer."
+    ]
+  }
+]

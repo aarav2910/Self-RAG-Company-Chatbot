@@ -1,0 +1,138 @@
+{
+  "created_at_utc": "2026-10-25T18:21:54.511614+00:00",
+  "pipeline": "Full Self-RAG graph via invoke_self_rag",
+  "golden_dataset": "project/eval/golden/correctness_golden.jsonl",
+  "pricing_usd_per_million_tokens": {
+    "gpt-4o-mini": {
+      "input": 0.15,
+      "cached_input": 0.075,
+      "output": 0.6
+    }
+  },
+  "cost_scope": "Chat-model usage reported by LangChain callbacks; embedding API usage is excluded.",
+  "sample_questions": 5,
+  "repeats_per_question": 1,
+  "summary": {
+    "sample_count": 5,
+    "mean_input_tokens": 4319,
+    "mean_cached_input_tokens": 972.8,
+    "mean_output_tokens": 186.4,
+    "mean_cost_usd_per_query": 0.00068673,
+    "min_cost_usd": 0.00062145,
+    "max_cost_usd": 0.00072555,
+    "mean_input_cost_usd": 0.00057489,
+    "mean_output_cost_usd": 0.00011184
+  },
+  "runs": [
+    {
+      "golden_id": "q01",
+      "question": "What is the normal work week at Valve, and is the lunch hour paid?",
+      "repeat": 1,
+      "latency_ms": 7998.564,
+      "answer_characters": 175,
+      "model_usage": {
+        "gpt-4o-mini-2024-07-18": {
+          "input_tokens": 4423,
+          "cached_input_tokens": 1152,
+          "uncached_input_tokens": 3271,
+          "output_tokens": 166
+        }
+      },
+      "input_tokens": 4423,
+      "cached_input_tokens": 1152,
+      "output_tokens": 166,
+      "input_usd": 0.00049065,
+      "cached_input_usd": 8.639999999999999e-05,
+      "output_usd": 9.96e-05,
+      "total_usd": 0.00067665
+    },
+    {
+      "golden_id": "q02",
+      "question": "How early must an employee notify their supervisor if they will be absent or late?",
+      "repeat": 1,
+      "latency_ms": 7069.263,
+      "answer_characters": 273,
+      "model_usage": {
+        "gpt-4o-mini-2024-07-18": {
+          "input_tokens": 4881,
+          "cached_input_tokens": 1408,
+          "uncached_input_tokens": 3473,
+          "output_tokens": 164
+        }
+      },
+      "input_tokens": 4881,
+      "cached_input_tokens": 1408,
+      "output_tokens": 164,
+      "input_usd": 0.00052095,
+      "cached_input_usd": 0.00010559999999999999,
+      "output_usd": 9.839999999999999e-05,
+      "total_usd": 0.0007249499999999999
+    },
+    {
+      "golden_id": "q03",
+      "question": "What happens if an employee is absent for three consecutive days without telling anyone?",
+      "repeat": 1,
+      "latency_ms": 6757.779,
+      "answer_characters": 233,
+      "model_usage": {
+        "gpt-4o-mini-2024-07-18": {
+          "input_tokens": 3551,
+          "cached_input_tokens": 0,
+          "uncached_input_tokens": 3551,
+          "output_tokens": 148
+        }
+      },
+      "input_tokens": 3551,
+      "cached_input_tokens": 0,
+      "output_tokens": 148,
+      "input_usd": 0.00053265,
+      "cached_input_usd": 0.0,
+      "output_usd": 8.88e-05,
+      "total_usd": 0.00062145
+    },
+    {
+      "golden_id": "q04",
+      "question": "Who is eligible for overtime pay, what is the rate, and who can authorize it?",
+      "repeat": 1,
+      "latency_ms": 7466.988,
+      "answer_characters": 409,
+      "model_usage": {
+        "gpt-4o-mini-2024-07-18": {
+          "input_tokens": 4493,
+          "cached_input_tokens": 1280,
+          "uncached_input_tokens": 3213,
+          "output_tokens": 246
+        }
+      },
+      "input_tokens": 4493,
+      "cached_input_tokens": 1280,
+      "output_tokens": 246,
+      "input_usd": 0.00048195,
+      "cached_input_usd": 9.6e-05,
+      "output_usd": 0.00014759999999999998,
+      "total_usd": 0.00072555
+    },
+    {
+      "golden_id": "q05",
+      "question": "Is employment at Valve guaranteed for a fixed period, and who can change the at-will policy?",
+      "repeat": 1,
+      "latency_ms": 7687.074,
+      "answer_characters": 273,
+      "model_usage": {
+        "gpt-4o-mini-2024-07-18": {
+          "input_tokens": 4247,
+          "cached_input_tokens": 1024,
+          "uncached_input_tokens": 3223,
+          "output_tokens": 208
+        }
+      },
+      "input_tokens": 4247,
+      "cached_input_tokens": 1024,
+      "output_tokens": 208,
+      "input_usd": 0.00048345,
+      "cached_input_usd": 7.68e-05,
+      "output_usd": 0.0001248,
+      "total_usd": 0.00068505
+    }
+  ]
+}

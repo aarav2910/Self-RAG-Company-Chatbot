@@ -1,0 +1,25 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+venv/
+.venv/
+env/
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Generated vector database and model/evaluation caches
+chroma_db/
+**/chroma_db/
+.streamlit/secrets.toml
+.deepeval/
+.cache/
+
+# macOS and editor files
+.DS_Store
+.idea/
+.vscode/

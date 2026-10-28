@@ -1,0 +1,26 @@
+# Streamlit frontend
+streamlit
+
+# Self-RAG, LangChain, and tracing
+langchain-core
+langchain-openai
+langchain-community
+langchain-classic
+langchain-text-splitters
+langgraph
+langsmith
+pydantic
+
+# Retrieval, vector storage, and reranking
+chromadb
+rank-bm25
+sentence-transformers
+
+# OpenAI API and document loading
+openai
+python-dotenv
+pypdf
+python-docx
+
+# Evaluation scripts
+deepeval

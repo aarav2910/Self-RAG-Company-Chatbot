@@ -1,0 +1,111 @@
+{
+  "created_at_utc": "2026-10-27T17:16:53.933465+00:00",
+  "pipeline": "Full Self-RAG graph via invoke_self_rag",
+  "golden_dataset": "project/eval/golden/correctness_golden.jsonl",
+  "sample_questions": 5,
+  "repeats_per_question": 2,
+  "discarded_warmups": 1,
+  "cold_start_ms": 15362.852124962956,
+  "cold_start_ttft_ms": 3144.125208025798,
+  "cold_start_question": "What is the normal work week at Valve, and is the lunch hour paid?",
+  "warm_latency_summary": {
+    "sample_count": 10,
+    "mean_ms": 10088.434233539738,
+    "p50_ms": 10133.673062664457,
+    "p95_ms": 11223.08788576629,
+    "p99_ms": 11269.867710652761,
+    "min_ms": 8847.328834002838,
+    "max_ms": 11281.562666874379
+  },
+  "warm_ttft_summary": {
+    "sample_count": 10,
+    "mean_ms": 1266.3920746650547,
+    "p50_ms": 923.0152498930693,
+    "p95_ms": 2621.238903969061,
+    "p99_ms": 2954.737413653638,
+    "min_ms": 741.0802911035717,
+    "max_ms": 3038.1120410747826
+  },
+  "warm_runs": [
+    {
+      "golden_id": "q01",
+      "question": "What is the normal work week at Valve, and is the lunch hour paid?",
+      "repeat": 1,
+      "latency_ms": 9126.47583312355,
+      "ttft_ms": 1271.534499945119,
+      "answer_characters": 180
+    },
+    {
+      "golden_id": "q01",
+      "question": "What is the normal work week at Valve, and is the lunch hour paid?",
+      "repeat": 2,
+      "latency_ms": 10441.540792118758,
+      "ttft_ms": 836.9260409381241,
+      "answer_characters": 180
+    },
+    {
+      "golden_id": "q02",
+      "question": "How early must an employee notify their supervisor if they will be absent or late?",
+      "repeat": 1,
+      "latency_ms": 10805.166542064399,
+      "ttft_ms": 894.5494168438017,
+      "answer_characters": 289
+    },
+    {
+      "golden_id": "q02",
+      "question": "How early must an employee notify their supervisor if they will be absent or late?",
+      "repeat": 2,
+      "latency_ms": 9206.016125157475,
+      "ttft_ms": 741.0802911035717,
+      "answer_characters": 289
+    },
+    {
+      "golden_id": "q03",
+      "question": "What happens if an employee is absent for three consecutive days without telling anyone?",
+      "repeat": 1,
+      "latency_ms": 8847.328834002838,
+      "ttft_ms": 807.5030830223113,
+      "answer_characters": 263
+    },
+    {
+      "golden_id": "q03",
+      "question": "What happens if an employee is absent for three consecutive days without telling anyone?",
+      "repeat": 2,
+      "latency_ms": 11023.42962496914,
+      "ttft_ms": 3038.1120410747826,
+      "answer_characters": 282
+    },
+    {
+      "golden_id": "q04",
+      "question": "Who is eligible for overtime pay, what is the rate, and who can authorize it?",
+      "repeat": 1,
+      "latency_ms": 9175.39787502028,
+      "ttft_ms": 951.4810829423368,
+      "answer_characters": 489
+    },
+    {
+      "golden_id": "q04",
+      "question": "Who is eligible for overtime pay, what is the rate, and who can authorize it?",
+      "repeat": 2,
+      "latency_ms": 11151.618708856404,
+      "ttft_ms": 2111.727291950956,
+      "answer_characters": 493
+    },
+    {
+      "golden_id": "q05",
+      "question": "Is employment at Valve guaranteed for a fixed period, and who can change the at-will policy?",
+      "repeat": 1,
+      "latency_ms": 11281.562666874379,
+      "ttft_ms": 1251.8079578876495,
+      "answer_characters": 499
+    },
+    {
+      "golden_id": "q05",
+      "question": "Is employment at Valve guaranteed for a fixed period, and who can change the at-will policy?",
+      "repeat": 2,
+      "latency_ms": 9825.805333210155,
+      "ttft_ms": 759.199040941894,
+      "answer_characters": 444
+    }
+  ]
+}

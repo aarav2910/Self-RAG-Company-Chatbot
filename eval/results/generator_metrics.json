@@ -1,0 +1,595 @@
+{
+  "created_at_utc": "2026-10-27T13:32:49.881509+00:00",
+  "golden_dataset": "project/eval/golden/faithfullness_golden.jsonl",
+  "generator_node": "Self-RAG generate_from_context",
+  "evaluation_mode": "golden ideal_context supplied directly; retrieval skipped",
+  "judge_model": "gpt-4o-mini",
+  "threshold": 0.7,
+  "query_count": 30,
+  "aggregate_metrics": {
+    "Faithfulness": {
+      "average_score": 0.9266666666666666,
+      "threshold": 0.7,
+      "passed_cases": 26,
+      "failed_cases": 4
+    },
+    "Answer Relevancy": {
+      "average_score": 0.8838095238095238,
+      "threshold": 0.7,
+      "passed_cases": 25,
+      "failed_cases": 5
+    }
+  },
+  "per_query_results": [
+    {
+      "id": "q01",
+      "query": "What is the normal work week at Valve, and is the lunch hour paid?",
+      "actual_output": "The normal work week at Valve consists of five (5) days, with each day being seven (7) hours long. Work hours are typically from 9:00 a.m. to 5:00 p.m., Monday through Friday. The lunch hour is unpaid.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addressed the question about the normal work week at Valve and the status of the lunch hour without including any irrelevant information."
+        }
+      }
+    },
+    {
+      "id": "q02",
+      "query": "How early must an employee notify their supervisor if they will be absent or late?",
+      "actual_output": "An employee must notify their supervisor and the office manager as far in advance as possible and no later than one hour before the start of their scheduled work day if they will be absent or late. In the case of an emergency, the employee must notify their supervisor as soon as possible.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addresses the input question without any irrelevant statements."
+        }
+      }
+    },
+    {
+      "id": "q03",
+      "query": "What happens if an employee is absent for three consecutive days without telling anyone?",
+      "actual_output": "If an employee is absent for three consecutive days without notifying anyone, they will be considered to have voluntarily terminated their employment. Additionally, the employee's final paycheck will be mailed to the last mailing address on file with Valve.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addresses the question about employee absence without including any irrelevant information."
+        }
+      }
+    },
+    {
+      "id": "q04",
+      "query": "Who is eligible for overtime pay, what is the rate, and who can authorize it?",
+      "actual_output": "Eligible for overtime pay are Non-Exempt Employees who work in excess of 40 hours in a work week. The overtime rate is one and one-half times (1½) the employee’s straight time rate, except for work on Sundays or holidays, when the rate is two times the regular rate. Overtime must be authorized by the Executive Director or their designee, upon the request of an employee’s supervisor.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addressed all aspects of the input regarding eligibility for overtime pay, the rate, and authorization without including any irrelevant information."
+        }
+      }
+    },
+    {
+      "id": "q05",
+      "query": "Is employment at Valve guaranteed for a fixed period, and who can change the at-will policy?",
+      "actual_output": "Employment at Valve is not guaranteed for a fixed period; it is \"at-will,\" meaning employees can be terminated with or without cause, and they can also leave with or without cause. The at-will policy can only be changed by a written employment agreement that provides differently, or through a representation that is in writing and signed by the Executive Director with the approval of the Board of Directors.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 0.6666666666666666,
+          "threshold": 0.7,
+          "passed": false,
+          "reason": "The score is 0.67 because the actual output contradicts the retrieval context by suggesting that the at-will policy can be altered through any written representation, while the context specifies that changes require a signed agreement from the Executive Director with Board approval."
+        },
+        "Answer Relevancy": {
+          "score": 0.8,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 0.80 because while the response provided relevant information about employment at Valve, it included a statement that did not address the specific question regarding the guarantee of employment and the at-will policy. This detracted from the overall relevance, preventing a higher score."
+        }
+      }
+    },
+    {
+      "id": "q06",
+      "query": "How does Valve define a full-time employee versus a part-time employee?",
+      "actual_output": "A Full-Time Employee is defined as someone who regularly works at least 35 hours per week. In contrast, a Part-Time Employee regularly works less than 35 hours per week but no less than 17 ½ hours per week.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addresses the question about Valve's definitions of full-time and part-time employees without any irrelevant statements."
+        }
+      }
+    },
+    {
+      "id": "q07",
+      "query": "What is the difference between an exempt and a non-exempt employee?",
+      "actual_output": "An exempt employee is paid on a salary basis and qualifies for exemption from the overtime requirements of the Fair Labor Standards Act (FLSA). In contrast, a non-exempt employee is paid an hourly rate and does not qualify for such exemption, meaning they are entitled to overtime pay. Additionally, for non-exempt employees, it is required to maintain an accurate record of hours worked.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 0.8333333333333334,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 0.83 because the actual output incorrectly states that a non-exempt employee does not qualify for overtime pay, contradicting the retrieval context which affirms their entitlement to such pay."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addresses the question about the difference between exempt and non-exempt employees without including any irrelevant statements."
+        }
+      }
+    },
+    {
+      "id": "q08",
+      "query": "Are temporary employees eligible for holidays, vacation, and sick leave?",
+      "actual_output": "Temporary employees are ineligible for holiday leave benefits, vacation benefits, and paid sick leave benefits.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 0.0,
+          "threshold": 0.7,
+          "passed": false,
+          "reason": "The score is 0.00 because the output included multiple irrelevant statements about temporary employees being ineligible for various benefits, which did not address the question of their eligibility."
+        }
+      }
+    },
+    {
+      "id": "q09",
+      "query": "When are paychecks distributed, and what if the pay date falls on a weekend or holiday?",
+      "actual_output": "Paychecks are distributed on the 15th and the last day of each month. If a pay date falls on a Saturday, Sunday, or holiday, paychecks will be distributed on the preceding workday.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addresses the question about paycheck distribution and handling pay dates that fall on weekends or holidays without any irrelevant statements."
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "query": "Who pays for employee health insurance premiums and when does coverage begin?",
+      "actual_output": "Valve currently pays the individual health insurance premiums for all eligible full-time and part-time employees, except those who are insured through their spouse, retired military, or other plans. Coverage begins after the first full month of employment.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 0.6666666666666666,
+          "threshold": 0.7,
+          "passed": false,
+          "reason": "The score is 0.67 because the actual output incorrectly claims that eligible employees are not covered by Valve's health insurance premiums, while the retrieval context clearly states that Valve pays the premiums for these employees."
+        },
+        "Answer Relevancy": {
+          "score": 0.5,
+          "threshold": 0.7,
+          "passed": false,
+          "reason": "The score is 0.50 because there were multiple irrelevant statements that failed to address the specific questions about who pays for health insurance premiums and when coverage begins."
+        }
+      }
+    },
+    {
+      "id": "q11",
+      "query": "Who is eligible for the retirement program and when does the employer contribute?",
+      "actual_output": "Eligible for the retirement program are full-time and part-time employees who are 21 years of age or older. The employer contributes to the employee’s retirement plan when the employee becomes vested after one year of employment. Eligible employees may contribute to the retirement plan at the start of their employment. The employer percentage contributions are reviewed and determined annually by the Valve Board of Directors.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addresses the eligibility criteria for the retirement program and the timing of employer contributions without any irrelevant statements."
+        }
+      }
+    },
+    {
+      "id": "q12",
+      "query": "How many holidays do full-time employees get, and which one is only a half day?",
+      "actual_output": "Full-time employees get 11.5 holidays per year. The holiday that is only a half day is Christmas Eve.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addressed the question about holidays for full-time employees and specified which holiday is a half day, with no irrelevant statements present."
+        }
+      }
+    },
+    {
+      "id": "q13",
+      "query": "How much paid vacation does a full-time employee earn in each year of employment?",
+      "actual_output": "A full-time employee earns the following paid vacation in each year of employment:\n\n- During the first year (after the initial 90 days), they earn two weeks (10 days).\n- In the second year, they continue to earn two weeks (10 days).\n- In the third year, they earn three weeks (15 days).\n- In the fourth year and thereafter, they earn four weeks (20 days).\n\nNo information is provided about vacation accrual for part-time employees or any other specific conditions.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 0.8,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 0.80 because the actual output incorrectly suggests that employees earn vacation benefits immediately after the initial 90 days, contradicting the retrieval context which states they do not earn vacation benefits during the first 90 days."
+        },
+        "Answer Relevancy": {
+          "score": 0.8333333333333334,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 0.83 because the output included irrelevant information about part-time employees, which detracted from the focus on full-time employee vacation benefits. However, the core information regarding full-time employee vacation was addressed, justifying the score."
+        }
+      }
+    },
+    {
+      "id": "q14",
+      "query": "Can unused vacation be carried over, and what happens when an employee hits the vacation ceiling?",
+      "actual_output": "Unused vacation can be carried over to the next year only with the approval of the Executive Director. When an employee hits the vacation ceiling, they cease to accrue any additional vacation benefits. If the employee later uses enough vacation benefits to fall below the ceiling, they will start to accrue leave again from that date forward until they reach their vacation ceiling again.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addressed the question about unused vacation carryover and the implications of hitting a vacation ceiling without including any irrelevant information."
+        }
+      }
+    },
+    {
+      "id": "q15",
+      "query": "How is sick leave earned, what is the maximum accumulation, and is unused sick leave paid out on separation?",
+      "actual_output": "Sick leave is earned on a prorated basis of one day (7 hours) per month for full-time employees, starting from the first day of employment. Part-time employees earn prorated sick leave benefits, such as 3.5 hours per month if they work 17.5 hours per week.\n\nUnused sick leave can accumulate up to a maximum of 30 days (210 hours) for full-time employees, with this limit prorated for part-time employees. Additionally, no sick leave benefits are paid out upon separation of employment from the company for any reason.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 0.75,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 0.75 because the actual output incorrectly implies that sick leave benefits for full-time employees are prorated, while the retrieval context clearly states that they earn sick leave at a fixed rate of one day per month."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addressed all aspects of the question regarding sick leave accumulation, maximum limits, and payout on separation without any irrelevant statements."
+        }
+      }
+    },
+    {
+      "id": "q16",
+      "query": "When will Valve require a doctor's note for an illness-related absence?",
+      "actual_output": "Valve may require a doctor's note for any illness-related absence, regardless of the length. However, if an employee's illness or injury results in a consecutive absence of five (5) days or more, physician documentation will be specifically required.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addresses the question about Valve's policy on requiring a doctor's note for illness-related absences without any irrelevant statements."
+        }
+      }
+    },
+    {
+      "id": "q17",
+      "query": "How many personal leave days do employees get and can they be carried over?",
+      "actual_output": "Employees receive three (3) days of personal leave per calendar year, provided they have completed six months of employment. Personal leave cannot be carried over into the next year, as it is accrued at the beginning of each year and must be used within that year.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 0.6,
+          "threshold": 0.7,
+          "passed": false,
+          "reason": "The score is 0.60 because there are irrelevant statements that contradict the input question about carrying over personal leave days, specifically mentioning that personal leave must be used within the calendar year. These inaccuracies detract from the overall relevance of the response."
+        }
+      }
+    },
+    {
+      "id": "q18",
+      "query": "How does military leave affect an employee's health insurance and benefit eligibility?",
+      "actual_output": "Military leave affects an employee's health insurance and benefit eligibility in the following ways:\n\n1. The time spent on military leave is counted as continuous service for determining eligibility and accrual for various benefit plans and policies.\n2. For military leaves extending 30 days or less, the company will continue to pay its portion of the health insurance premium, provided the employee continues to pay their portion of the premiums.\n3. For military leaves extending beyond 30 days, the employee has the option to continue their insurance coverage, but at their own cost.\n\nNo information is provided regarding specific benefits that may be affected or any additional eligibility requirements beyond what is stated.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 0.75,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 0.75 because the actual output incorrectly states that Valve will only pay its portion of the health insurance premium if the employee pays theirs, contradicting the retrieval context which specifies that Valve will continue to pay part of the premium for military leaves of 30 days or less regardless of the employee's payment."
+        },
+        "Answer Relevancy": {
+          "score": 0.8,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 0.80 because while the response addresses military leave, it fails to specifically explain its impact on health insurance and benefit eligibility, which is the core of the question."
+        }
+      }
+    },
+    {
+      "id": "q19",
+      "query": "How is jury duty compensated and what if it lasts more than ten days?",
+      "actual_output": "Employees are compensated for jury duty by Valve paying the difference between their salary and any amount paid by the government, up to a maximum of ten days. If jury duty lasts more than ten days, employees will receive unpaid leave. Additionally, employees must provide Valve with a copy of the proof of service received from the court.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 0.6666666666666666,
+          "threshold": 0.7,
+          "passed": false,
+          "reason": "The score is 0.67 because the actual output incorrectly states that employees can provide a copy of the service received from the court, while the retrieval context specifies that they must provide proof, not a copy."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addressed the question about jury duty compensation and the implications of extended service without any irrelevant statements."
+        }
+      }
+    },
+    {
+      "id": "q20",
+      "query": "How much parental leave can an employee take for school-related events, and is it paid?",
+      "actual_output": "An employee can take a total of 24 hours of unpaid leave during any 12-month period for school-related events for their child. This leave is unpaid, but employees may choose to use accrued vacation or personal leave. If the need for parental leave is foreseeable, the employee must provide written notice and request for leave at least 10 days prior to the event.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addressed the question about parental leave for school-related events without including any irrelevant information."
+        }
+      }
+    },
+    {
+      "id": "q21",
+      "query": "How many days of paid bereavement leave are given for a parent versus a grandparent?",
+      "actual_output": "Employees are entitled to five (5) days of paid bereavement leave for the death of a parent. For the death of a grandparent, employees are entitled to three (3) days of paid bereavement leave.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addressed the question about paid bereavement leave for a parent versus a grandparent without including any irrelevant information."
+        }
+      }
+    },
+    {
+      "id": "q22",
+      "query": "Who can apply for extended personal leave, how long can it last, and is reinstatement guaranteed?",
+      "actual_output": "Employees who have been employed by Valve for at least one year can apply for extended personal leave. The leave can last for up to eight weeks. Reinstatement is not guaranteed; however, Valve will make a reasonable effort to place the employee in an available position for which they are qualified. If no such position is available, the employee’s employment will terminate.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 0.6,
+          "threshold": 0.7,
+          "passed": false,
+          "reason": "The score is 0.60 because there are contradictions regarding reinstatement and irrelevant discussions about termination that detract from addressing the specific questions about extended personal leave."
+        }
+      }
+    },
+    {
+      "id": "q23",
+      "query": "What is Valve's policy when the office is closed due to severe weather?",
+      "actual_output": "Valve's policy when the office is closed due to severe weather is to close in alignment with the federal government offices in the Washington metropolitan area. Additionally, Valve implements a liberal leave policy when the federal government announces that it is applicable. Under this policy, employees may take annual and/or personal leave without prior scheduling and approval if they are unable to reach the office due to severe weather conditions.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addressed Valve's policy regarding office closures due to severe weather without any irrelevant statements."
+        }
+      }
+    },
+    {
+      "id": "q24",
+      "query": "How much notice should an employee give when resigning, and are they paid for unused vacation?",
+      "actual_output": "Employees are encouraged to provide at least 10 business days (two weeks) written notice prior to resignation. They are entitled to receive accrued, unused vacation benefits upon resignation.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addressed the questions about resignation notice and unused vacation pay without any irrelevant statements."
+        }
+      }
+    },
+    {
+      "id": "q25",
+      "query": "What is the consequence of falsifying information on an employment application?",
+      "actual_output": "The consequence of falsifying information on an employment application is immediate termination. This applies to any information that did or would have affected Valve’s decision to hire you.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no irrelevant statements in the output, providing a clear and direct answer to the question about the consequences of falsifying information on an employment application."
+        }
+      }
+    },
+    {
+      "id": "q26",
+      "query": "What must employees return upon separation, and can Valve withhold money if property is not returned?",
+      "actual_output": "Employees must return all Valve property that is in their possession or control upon separation from employment or immediately upon request by the Executive Director or their designee. Yes, Valve can withhold money from the employee’s final paycheck for the cost of any property, including intellectual property, that is not returned when required. Additionally, Valve may take any action deemed appropriate to recover or protect its property.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 0.6666666666666666,
+          "threshold": 0.7,
+          "passed": false,
+          "reason": "The score is 0.67 because the actual output inaccurately expands the context by stating that Valve can withhold money for unreturned intellectual property, whereas the retrieval context only refers to withholding for unreturned property."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addresses the question about employee separation and property return without any irrelevant statements."
+        }
+      }
+    },
+    {
+      "id": "q27",
+      "query": "Are employees allowed to hold outside jobs?",
+      "actual_output": "Employees are allowed to hold outside jobs as long as they meet the performance standards of their job with Valve. However, if Valve determines that an employee’s outside work interferes with their job performance or ability to meet requirements, the employee may be asked to terminate the outside employment to remain employed with Valve. Additionally, outside employment that constitutes a conflict of interest is prohibited.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addresses the question about employees holding outside jobs without any irrelevant statements."
+        }
+      }
+    },
+    {
+      "id": "q28",
+      "query": "What counts as confidential information and what happens if an employee discloses it?",
+      "actual_output": "Confidential information includes any information learned about Valve, its members, or donors that is not publicly available. This encompasses, but is not limited to, compensation data, program and financial information, information related to donors, and pending projects and proposals. \n\nIf an employee discloses confidential information, they will be subject to disciplinary action, which may include possible separation from the company, regardless of whether they benefit from the disclosure.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because the response directly addresses the question about confidential information and the consequences of disclosure without any irrelevant statements."
+        }
+      }
+    },
+    {
+      "id": "q29",
+      "query": "Do employees have a right to privacy for emails and files on company computers?",
+      "actual_output": "Employees do not have a right to privacy for emails and files on company computers. All data in Valve’s computer and communication systems is the property of Valve, and the company may inspect and monitor such data at any time. No individual should have any expectation of privacy for messages or other data recorded in Valve’s systems, including those marked “private.” Additionally, deleting a document or message does not prevent access to it or completely eliminate it from the system.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 0.7142857142857143,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 0.71 because there are statements that contradict the question about employees' rights to privacy, which detracts from the overall relevance of the response."
+        }
+      }
+    },
+    {
+      "id": "q30",
+      "query": "How should an employee report harassment, and what if the complaint is against the Executive Director?",
+      "actual_output": "An employee should report harassment immediately to their supervisor or to the Executive Director. If the complaint is against the Executive Director, the employee should notify the staff member designated as the grievance officer.",
+      "metrics": {
+        "Faithfulness": {
+          "score": 1.0,
+          "threshold": 0.7,
+          "passed": true,
+          "reason": "The score is 1.00 because there are no contradictions present, indicating that the actual output aligns perfectly with the retrieval context."
+        },
+        "Answer Relevancy": {
+          "score": 0.6666666666666666,
+          "threshold": 0.7,
+          "passed": false,
+          "reason": "The score is 0.67 because the response included an irrelevant statement about reporting to the Executive Director, which does not directly address the question of how to report harassment or the specific situation involving the Executive Director."
+        }
+      }
+    }
+  ]
+}

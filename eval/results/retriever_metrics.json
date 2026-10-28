@@ -1,0 +1,959 @@
+{
+  "created_at_utc": "2026-10-25T14:25:02.009046+00:00",
+  "golden_dataset": "/Users/aaravverma/Desktop/self-RAG_project/project/eval/golden/valve_handbook_retriever_golden.jsonl",
+  "retriever": "BM25 + Chroma hybrid (no cross-encoder reranker)",
+  "retrieval_k": 10,
+  "query_count": 30,
+  "metric_averaging": "macro average across questions",
+  "aggregate_metrics_by_k": {
+    "3": {
+      "recall_at_k": 0.8833333333333333,
+      "mrr_at_k": 0.8666666666666667,
+      "precision_at_k": 0.4888888888888889
+    },
+    "4": {
+      "recall_at_k": 0.9166666666666666,
+      "mrr_at_k": 0.875,
+      "precision_at_k": 0.4166666666666667
+    },
+    "5": {
+      "recall_at_k": 0.9333333333333333,
+      "mrr_at_k": 0.875,
+      "precision_at_k": 0.3666666666666667
+    }
+  },
+  "per_query_results": [
+    {
+      "id": "valve_001",
+      "question": "What is Valve's mission statement?",
+      "relevant_pages": [
+        5
+      ],
+      "retrieved_pages_at_5": [
+        6,
+        23,
+        11,
+        5,
+        10
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 0.0,
+          "mrr_at_k": 0.0,
+          "precision_at_k": 0.0
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 0.25,
+          "precision_at_k": 0.25
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 0.25,
+          "precision_at_k": 0.2
+        }
+      }
+    },
+    {
+      "id": "valve_002",
+      "question": "Can Valve end my employment for no reason?",
+      "relevant_pages": [
+        6,
+        20
+      ],
+      "retrieved_pages_at_5": [
+        6,
+        23,
+        7,
+        2,
+        20
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 0.5,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333
+        },
+        "4": {
+          "recall_at_k": 0.5,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.25
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_003",
+      "question": "What should an employee do if they need to report workplace harassment?",
+      "relevant_pages": [
+        9
+      ],
+      "retrieved_pages_at_5": [
+        9,
+        23,
+        6,
+        23,
+        8
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.25
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.2
+        }
+      }
+    },
+    {
+      "id": "valve_004",
+      "question": "What is Valve's normal work week and usual schedule?",
+      "relevant_pages": [
+        10
+      ],
+      "retrieved_pages_at_5": [
+        10,
+        11,
+        19,
+        10,
+        12
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.5
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_005",
+      "question": "Who must an employee notify about an absence or planned lateness?",
+      "relevant_pages": [
+        10
+      ],
+      "retrieved_pages_at_5": [
+        10,
+        10,
+        18,
+        21,
+        9
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6666666666666666
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.5
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_006",
+      "question": "What is the overtime rate for non-exempt employees, and who can authorize overtime?",
+      "relevant_pages": [
+        10,
+        11
+      ],
+      "retrieved_pages_at_5": [
+        11,
+        10,
+        11,
+        7,
+        10
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 1.0
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.75
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.8
+        }
+      }
+    },
+    {
+      "id": "valve_007",
+      "question": "How many consecutive days of absence without notifying a supervisor may be treated as voluntary termination?",
+      "relevant_pages": [
+        10
+      ],
+      "retrieved_pages_at_5": [
+        10,
+        15,
+        21,
+        20,
+        18
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.25
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.2
+        }
+      }
+    },
+    {
+      "id": "valve_008",
+      "question": "What is Valve's remote work or work-from-home policy?",
+      "relevant_pages": [
+        10
+      ],
+      "retrieved_pages_at_5": [
+        10,
+        23,
+        23,
+        10,
+        18
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.5
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_009",
+      "question": "What is the difference between exempt and non-exempt employees?",
+      "relevant_pages": [
+        11
+      ],
+      "retrieved_pages_at_5": [
+        11,
+        11,
+        16,
+        10,
+        16
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6666666666666666
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.5
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_010",
+      "question": "How often are formal performance reviews held, and what are they intended to do?",
+      "relevant_pages": [
+        12
+      ],
+      "retrieved_pages_at_5": [
+        12,
+        12,
+        5,
+        22,
+        19
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6666666666666666
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.5
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_011",
+      "question": "When does Valve begin paying individual health insurance premiums for eligible employees?",
+      "relevant_pages": [
+        13
+      ],
+      "retrieved_pages_at_5": [
+        13,
+        16,
+        13,
+        15,
+        14
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6666666666666666
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.5
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_012",
+      "question": "When does Valve contribute to an eligible employee's retirement plan?",
+      "relevant_pages": [
+        13
+      ],
+      "retrieved_pages_at_5": [
+        13,
+        14,
+        13,
+        13,
+        15
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6666666666666666
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.75
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6
+        }
+      }
+    },
+    {
+      "id": "valve_013",
+      "question": "Does the handbook identify the current health insurance provider by name?",
+      "relevant_pages": [
+        13
+      ],
+      "retrieved_pages_at_5": [
+        13,
+        13,
+        16,
+        12,
+        19
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6666666666666666
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.5
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_014",
+      "question": "What should employees do after an on-the-job accident, even if no injury is apparent?",
+      "relevant_pages": [
+        13
+      ],
+      "retrieved_pages_at_5": [
+        13,
+        18,
+        10,
+        23,
+        9
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.25
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.2
+        }
+      }
+    },
+    {
+      "id": "valve_015",
+      "question": "What percentage of salary does Valve contribute to the retirement plan?",
+      "relevant_pages": [
+        13
+      ],
+      "retrieved_pages_at_5": [
+        13,
+        13,
+        14,
+        15,
+        13
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6666666666666666
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.5
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6
+        }
+      }
+    },
+    {
+      "id": "valve_016",
+      "question": "How many holidays are full-time employees eligible for each year?",
+      "relevant_pages": [
+        14
+      ],
+      "retrieved_pages_at_5": [
+        14,
+        14,
+        15,
+        15,
+        16
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6666666666666666
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.5
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_017",
+      "question": "How does full-time vacation accrual change with length of service?",
+      "relevant_pages": [
+        15
+      ],
+      "retrieved_pages_at_5": [
+        15,
+        15,
+        15,
+        10,
+        16
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 1.0
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.75
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6
+        }
+      }
+    },
+    {
+      "id": "valve_018",
+      "question": "How many paid vacation days does a temporary employee receive each year?",
+      "relevant_pages": [
+        15
+      ],
+      "retrieved_pages_at_5": [
+        15,
+        16,
+        11,
+        15,
+        16
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.5
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_019",
+      "question": "Are unused sick leave benefits paid out when employment ends?",
+      "relevant_pages": [
+        15
+      ],
+      "retrieved_pages_at_5": [
+        15,
+        15,
+        18,
+        15,
+        18
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6666666666666666
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.75
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6
+        }
+      }
+    },
+    {
+      "id": "valve_020",
+      "question": "How many personal leave days are provided, and when can employees use them?",
+      "relevant_pages": [
+        16
+      ],
+      "retrieved_pages_at_5": [
+        15,
+        16,
+        17,
+        15,
+        18
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 0.5,
+          "precision_at_k": 0.3333333333333333
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 0.5,
+          "precision_at_k": 0.25
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 0.5,
+          "precision_at_k": 0.2
+        }
+      }
+    },
+    {
+      "id": "valve_021",
+      "question": "Do I get paid if I'm called for jury service?",
+      "relevant_pages": [
+        16
+      ],
+      "retrieved_pages_at_5": [
+        16,
+        16,
+        12,
+        2,
+        17
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6666666666666666
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.5
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_022",
+      "question": "How much paid bereavement leave does the handbook provide for an immediate family member?",
+      "relevant_pages": [
+        17
+      ],
+      "retrieved_pages_at_5": [
+        17,
+        18,
+        15,
+        16,
+        15
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.25
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.2
+        }
+      }
+    },
+    {
+      "id": "valve_023",
+      "question": "How much unpaid parental leave may an employee take for a child's school-related events?",
+      "relevant_pages": [
+        17
+      ],
+      "retrieved_pages_at_5": [
+        17,
+        17,
+        18,
+        16,
+        15
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6666666666666666
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.5
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_024",
+      "question": "How many weeks of paid maternity leave does Valve provide?",
+      "relevant_pages": [
+        17
+      ],
+      "retrieved_pages_at_5": [
+        16,
+        15,
+        16,
+        19,
+        18
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 0.0,
+          "mrr_at_k": 0.0,
+          "precision_at_k": 0.0
+        },
+        "4": {
+          "recall_at_k": 0.0,
+          "mrr_at_k": 0.0,
+          "precision_at_k": 0.0
+        },
+        "5": {
+          "recall_at_k": 0.0,
+          "mrr_at_k": 0.0,
+          "precision_at_k": 0.0
+        }
+      }
+    },
+    {
+      "id": "valve_025",
+      "question": "How long may an employee who has worked at least one year request an extended personal leave?",
+      "relevant_pages": [
+        18
+      ],
+      "retrieved_pages_at_5": [
+        18,
+        16,
+        15,
+        14,
+        17
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.25
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.2
+        }
+      }
+    },
+    {
+      "id": "valve_026",
+      "question": "How much written notice does Valve encourage before an employee resigns?",
+      "relevant_pages": [
+        19
+      ],
+      "retrieved_pages_at_5": [
+        19,
+        2,
+        20,
+        17,
+        19
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.25
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_027",
+      "question": "What is the per-mile reimbursement rate for using a personal car?",
+      "relevant_pages": [
+        19
+      ],
+      "retrieved_pages_at_5": [
+        10,
+        19,
+        16,
+        15,
+        19
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 0.5,
+          "precision_at_k": 0.3333333333333333
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 0.5,
+          "precision_at_k": 0.25
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 0.5,
+          "precision_at_k": 0.4
+        }
+      }
+    },
+    {
+      "id": "valve_028",
+      "question": "Can I moonlight at another job on the side?",
+      "relevant_pages": [
+        22
+      ],
+      "retrieved_pages_at_5": [
+        22,
+        9,
+        23,
+        11,
+        2
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.3333333333333333
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.25
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.2
+        }
+      }
+    },
+    {
+      "id": "valve_029",
+      "question": "Is it okay to check my personal stuff on my work computer?",
+      "relevant_pages": [
+        24
+      ],
+      "retrieved_pages_at_5": [
+        26,
+        26,
+        2,
+        8,
+        26
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 0.0,
+          "mrr_at_k": 0.0,
+          "precision_at_k": 0.0
+        },
+        "4": {
+          "recall_at_k": 0.0,
+          "mrr_at_k": 0.0,
+          "precision_at_k": 0.0
+        },
+        "5": {
+          "recall_at_k": 0.0,
+          "mrr_at_k": 0.0,
+          "precision_at_k": 0.0
+        }
+      }
+    },
+    {
+      "id": "valve_030",
+      "question": "When is employee internet access provided under the handbook?",
+      "relevant_pages": [
+        26
+      ],
+      "retrieved_pages_at_5": [
+        26,
+        26,
+        26,
+        13,
+        10
+      ],
+      "metrics_by_k": {
+        "3": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 1.0
+        },
+        "4": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.75
+        },
+        "5": {
+          "recall_at_k": 1.0,
+          "mrr_at_k": 1.0,
+          "precision_at_k": 0.6
+        }
+      }
+    }
+  ]
+}
