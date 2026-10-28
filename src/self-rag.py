@@ -375,7 +375,7 @@ def generate_from_context(state: State):
         return {"answer": "No answer found.", "context": ""}
     if str(SRC_DIR) not in sys.path:
         sys.path.insert(0, str(SRC_DIR))
-    from src.generator import generate
+    from generator import generate
 
     answer = generate(state["question"], context)
     return {"answer": answer, "context": context}

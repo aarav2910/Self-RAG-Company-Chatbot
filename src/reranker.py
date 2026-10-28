@@ -2,7 +2,7 @@
 
 from langsmith import traceable
 
-from src.retriever import RETRIEVAL_K, create_hybrid_retriever
+from retriever import RETRIEVAL_K, create_hybrid_retriever
 
 FINAL_K = 5
 CROSS_ENCODER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
